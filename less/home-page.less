@@ -1,4 +1,18 @@
 // Home Content
+.nav-top {
+  background-color: @nav-border;
+
+  h1 {
+    .center;
+    padding-top: 20px;
+    font-size: 3.5rem;
+
+    @media @phone {
+      padding-bottom: 10px;
+    }
+  }
+}
+
 
 .home {
 
@@ -10,6 +24,13 @@
 
     p {
       padding:0 15px;
+    }
+
+    img {
+      @media @phone {
+         width: 100%;
+      }
+     
     }
   
   }
@@ -24,6 +45,21 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 100%;
+        margin-top: 30px;
+      }
+      .sky{
+        @media @phone {
+        display: none;
+        }
+      }
+      .launch {
+        @media @phone {
+        display: none;
+        }
+      }
     }
   }
 
@@ -56,8 +92,14 @@
       p {
         margin-bottom: 26px;
       }
-
+      // pmixin
       .btn {
+        .btn-mixin;
+        width: 320px;
+        height: 50px;
+        margin: 0 auto;
+        padding-top: 15px;
+
       }
     }
 

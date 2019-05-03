@@ -1,1 +1,30 @@
 // Navigation code here
+
+nav {
+	.center;
+	align-items: center;
+	margin-top: 20px;
+
+	@media @phone {
+		flex-wrap: wrap;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding-bottom: 10px;
+	}
+
+	a {
+		text-decoration: none;
+		color: @main-font-color;
+		font-size: 2rem;
+		align-items: center;
+		margin-right: 24px;
+
+	    // Hover state
+
+		&:hover {
+			text-decoration: underline;
+			color: @main-font-color;
+		}
+	} 
+}	
